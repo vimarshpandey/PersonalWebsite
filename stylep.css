@@ -56,6 +56,7 @@ header
     align-items: center;
     justify-content: center;
     flex-flow: column;
+    text-align: center;
 }
 header .user img
 {
@@ -64,7 +65,7 @@ header .user img
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border: 7rem solid var(--yellow);
+    border: .7rem solid var(--yellow);
 }
 header .user .name
 {
@@ -75,4 +76,56 @@ header .user .post
 {
     font-size: 2rem;
     color: #eee;
+}
+header .navbar
+{
+    width: 100%;
+}
+header .navbar ul
+{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+header .navbar ul li a
+{
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem;
+    background: #333;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+header .navbar ul li a:hover
+{
+    background: var(--yellow);
+}
+#menu
+{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+@media (max-width:1200px)
+{
+    html
+    {
+        font-size: 55%;
+    }
+}
+
+@media (max-width:991px)
+{
+    header
+    {
+        left: -120%;
+    }
 }
