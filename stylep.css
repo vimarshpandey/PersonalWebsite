@@ -124,8 +124,16 @@ header .navbar ul li a:hover
 
 @media (max-width:991px)
 {
-    header
+    #demo
     {
-        left: -120%;
+        display: none;
+    }
+    #menu
+    {
+        display: block;
+    }
+    header.toggle
+    {
+        left: 0%;
     }
 }
