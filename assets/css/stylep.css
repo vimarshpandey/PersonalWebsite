@@ -527,7 +527,7 @@ img{
     margin-bottom: var(--mb-2-5);
 }
 
-.skills__open .skillls__arrow{
+.skills__open .skills__arrow{
     transform: rotate(-180deg);
 }
 
@@ -913,11 +913,12 @@ img{
     }
 
     .about__img{
-        width: 270px;
+        width: 250px;
     }
 
     .about__container,
     .contact__container,
+    .skills__container,
     .footer__container{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1016,7 +1017,7 @@ img{
     }
 
     .about__info{
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .about__buttons{
