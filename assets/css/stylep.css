@@ -513,6 +513,10 @@ img{
     width: 65%;
 }
 
+.skills__php{
+    width: 40%;
+}
+
 .skills__mysql{
     width: 50%;
 }
