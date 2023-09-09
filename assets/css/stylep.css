@@ -27,7 +27,7 @@
     --body-font: 'Poppins', sans-serif;
 
     --big-font-size: 2rem;
-    --h1-font-size: 1.5ren;
+    --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
     --normal-font-size: .938rem;
@@ -58,7 +58,7 @@
 @media screen and (min-width: 968px) {
     :root {
         --big-font-size: 3rem;
-        --h1-font-size: 2.25ren;
+        --h1-font-size: 2.25rem;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
         --normal-font-size: 1rem;
@@ -140,7 +140,7 @@ img{
 }
 
 .section__title{
-    font-size: var(--h1-font-size);
+    font-size: var(--h2-font-size);
 }
 
 .section__subtitle{
@@ -384,7 +384,9 @@ img{
 
 /*========================= ABOUT =============================*/
 .about__img{
-    width: 200px;
+    padding: 140px;
+    background-image: url('../img/MyImage.jpg');
+    background-size: cover;
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
@@ -459,8 +461,13 @@ img{
 }
 
 .skills__list{
+    display: block;
     row-gap: 1.5rem;
-    padding-left: 2.7rem;
+    padding: 0px 12px;
+}
+
+.skills__list > .skills__data{
+    width: 100%;
 }
 
 .skills_titles{
@@ -931,6 +938,11 @@ img{
         grid-template-columns: .6fr;
         justify-content: center;
     }
+
+    .skills__list{
+        display: flex;
+        padding-left: 2.7rem;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -1013,6 +1025,7 @@ img{
 
     .about__img{
         width: 350px;
+        height: 400px;
     }
 
     .about__description{
@@ -1066,11 +1079,13 @@ img{
 
     .footer__links{
         flex-direction: row;
+        margin-top: 2rem;
         column-gap: 2rem;
     }
 
     .footer__socials{
         justify-self: flex-end;
+        margin-top: 2rem;
     }
 
     .footer__copy{
