@@ -504,6 +504,10 @@ img{
     width: 60%;
 }
 
+.skills__java{
+    width: 40%;
+}
+
 .skills__micropython{
     width: 25%;
 }
