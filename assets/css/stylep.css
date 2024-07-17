@@ -509,7 +509,7 @@ img{
 }
 
 .skills__micropython{
-    width: 25%;
+    width: 30%;
 }
 
 .skills__html{
@@ -530,6 +530,14 @@ img{
 
 .skills__mysql{
     width: 50%;
+}
+
+.skills__flutter{
+    width: 50%;
+}
+
+.skills__dart{
+    width: 35%;
 }
 
 .skills__close .skills__list{
