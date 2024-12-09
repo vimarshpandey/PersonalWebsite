@@ -532,6 +532,10 @@ img{
     width: 50%;
 }
 
+.skills__firebase{
+    width: 30%;
+}
+
 .skills__flutter{
     width: 50%;
 }
