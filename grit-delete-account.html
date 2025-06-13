@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delete Account - App Settings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./delete-style.css" />
+</head>
+<body>
+  <div class="settings-container">
+    <h2>Profile Settings</h2>
+    
+    <div class="section">
+      <h3>Account</h3>
+      <p>Manage your account details and preferences.</p>
+      <button id="deleteBtn" class="delete-button">Delete Account</button>
+    </div>
+  </div>
+
+  <!-- Confirmation Modal -->
+  <div id="confirmModal" class="modal">
+    <div class="modal-content">
+      <h3>Confirm Deletion</h3>
+      <p>Are you sure you want to delete your account? This action cannot be undone.</p>
+      <div class="modal-actions">
+        <button id="cancelBtn" class="cancel-button">Cancel</button>
+        <button id="confirmBtn" class="confirm-button">Yes, Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const deleteBtn = document.getElementById('deleteBtn');
+    const modal = document.getElementById('confirmModal');
+    const cancelBtn = document.getElementById('cancelBtn');
+    const confirmBtn = document.getElementById('confirmBtn');
+
+    deleteBtn.onclick = () => modal.style.display = 'flex';
+    cancelBtn.onclick = () => modal.style.display = 'none';
+
+    confirmBtn.onclick = () => {
+      modal.style.display = 'none';
+      alert('Your account has been deleted and data removed.');
+      // In a real application, send a request to your backend here.
+    };
+
+    window.onclick = function(e) {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
