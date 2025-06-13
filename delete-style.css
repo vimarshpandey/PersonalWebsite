@@ -1,84 +1,61 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
-  background: #f9f9f9;
+  background-color: #f5f7fa;
   color: #333;
+  line-height: 1.6;
 }
 
-.settings-container {
-  max-width: 600px;
+.container {
+  max-width: 700px;
   margin: 50px auto;
-  background: #fff;
-  padding: 30px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+  padding: 40px 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   border-radius: 8px;
 }
 
-.section {
-  margin-top: 20px;
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2c3e50;
 }
 
-.delete-button {
-  background-color: #d9534f;
-  color: #fff;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
+.steps h2 {
+  margin-top: 30px;
+  font-size: 22px;
+  color: #34495e;
+}
+
+ol {
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+
+.note {
+  background-color: #fff8e1;
+  padding: 15px 20px;
+  margin-top: 30px;
+  border-left: 5px solid #ffc107;
+  border-radius: 4px;
   font-size: 14px;
 }
 
-.delete-button:hover {
-  background-color: #c9302c;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0,0,0,0.5);
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-content {
-  background-color: white;
-  padding: 30px;
-  border-radius: 8px;
-  text-align: center;
-  width: 90%;
-  max-width: 400px;
-}
-
-.modal-actions {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.cancel-button,
-.confirm-button {
-  padding: 10px 18px;
-  border: none;
-  border-radius: 5px;
+footer {
+  margin-top: 40px;
   font-size: 14px;
-  cursor: pointer;
+  color: #777;
 }
 
-.cancel-button {
-  background-color: #ccc;
+footer a {
+  color: #007bff;
+  text-decoration: none;
 }
 
-.confirm-button {
-  background-color: #d9534f;
-  color: #fff;
-}
-
-.confirm-button:hover {
-  background-color: #c9302c;
+footer a:hover {
+  text-decoration: underline;
 }

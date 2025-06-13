@@ -3,53 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Delete Account - App Settings</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+  <title>Delete Your Account</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="./delete-style.css" />
 </head>
 <body>
-  <div class="settings-container">
-    <h2>Profile Settings</h2>
-    
-    <div class="section">
-      <h3>Account</h3>
-      <p>Manage your account details and preferences.</p>
-      <button id="deleteBtn" class="delete-button">Delete Account</button>
+  <div class="container">
+    <h1>How to Delete Your Account</h1>
+    <p>Your privacy and control over your data is important to us. If you'd like to delete your account, please follow the steps below:</p>
+
+    <div class="steps">
+      <h2>Steps to Delete Your Account:</h2>
+      <ol>
+        <li>Open the <strong>App</strong> on your mobile device.</li>
+        <li>Navigate to the <strong>Settings</strong> or <strong>Profile</strong> section.</li>
+        <li>Scroll down to the <strong>Account</strong> section.</li>
+        <li>Tap on the <strong>"Delete Account"</strong> button.</li>
+        <li>Confirm the deletion in the confirmation dialog.</li>
+      </ol>
     </div>
-  </div>
 
-  <!-- Confirmation Modal -->
-  <div id="confirmModal" class="modal">
-    <div class="modal-content">
-      <h3>Confirm Deletion</h3>
-      <p>Are you sure you want to delete your account? This action cannot be undone.</p>
-      <div class="modal-actions">
-        <button id="cancelBtn" class="cancel-button">Cancel</button>
-        <button id="confirmBtn" class="confirm-button">Yes, Delete</button>
-      </div>
+    <p>Once confirmed, your account and associated data will be permanently deleted from our system.</p>
+
+    <div class="note">
+      <strong>Note:</strong> This action is irreversible. Make sure to back up any important information before deleting your account.
     </div>
+
+    <footer>
+      <p>If you need help, contact us at <a href="mailto:support@yourapp.com">support@yourapp.com</a></p>
+    </footer>
   </div>
-
-  <script>
-    const deleteBtn = document.getElementById('deleteBtn');
-    const modal = document.getElementById('confirmModal');
-    const cancelBtn = document.getElementById('cancelBtn');
-    const confirmBtn = document.getElementById('confirmBtn');
-
-    deleteBtn.onclick = () => modal.style.display = 'flex';
-    cancelBtn.onclick = () => modal.style.display = 'none';
-
-    confirmBtn.onclick = () => {
-      modal.style.display = 'none';
-      alert('Your account has been deleted and data removed.');
-      // In a real application, send a request to your backend here.
-    };
-
-    window.onclick = function(e) {
-      if (e.target === modal) {
-        modal.style.display = 'none';
-      }
-    }
-  </script>
 </body>
 </html>
