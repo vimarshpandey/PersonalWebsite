@@ -1,0 +1,144 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0a;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+main {
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px 20px 80px;
+  background: #121212;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+  max-width: 900px;
+  margin: 40px auto 80px;
+  color: #ddd;
+}
+
+.left-content {
+  max-width: 100%;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.left-content p,
+.left-content ul {
+  margin-bottom: 22px;
+  color: #ccc;
+}
+
+.left-content ul {
+  padding-left: 24px;
+}
+
+.left-content h1.main-title {
+  font-size: clamp(48px, 6vw, 80px);
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: -2px;
+}
+
+.left-content h2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #ff4757;
+  border-bottom: 3px solid #ff4757;
+  padding-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+a {
+  color: #ff4757;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff3742;
+  text-decoration: underline;
+}
+
+header {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #eee;
+}
+
+.logo-text {
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: -1.5px;
+}
+
+.logo-icon {
+  width: 50px;
+  height: 50px;
+  background-image: url('assets/logo.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50% 50% 50% 10px;
+  box-shadow: 0 0 10px #ff4757aa;
+}
+
+.contact-info {
+  font-size: 16px;
+  color: #888;
+  font-weight: 500;
+  font-style: italic;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px 10px;
+  background: #0a0a0a;
+  color: #666;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.8);
+  user-select: none;
+  font-weight: 400;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  main {
+    margin: 20px 15px 100px;
+    padding: 40px 20px 60px;
+  }
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .contact-info {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 28px;
+  }
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+  main {
+    padding: 30px 15px 50px;
+  }
+}
