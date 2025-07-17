@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grit - Terms of Use</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background-color: #000000;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            margin-bottom: 60px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+            padding-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #ffffff;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #888;
+            margin-bottom: 24px;
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .app-info {
+            background: #1a1a1a;
+            border-radius: 6px;
+            padding: 32px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .app-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+            color: #ffffff;
+        }
+
+        .app-info .acronym {
+            font-size: 1.2rem;
+            color: #888;
+            margin-bottom: 24px;
+        }
+
+        .app-info .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .feature-item {
+            background: #000000;
+            padding: 16px;
+            border-radius: 4px;
+            border: 1px solid #333;
+        }
+
+        .feature-item h3 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .feature-item p {
+            font-size: 0.9rem;
+            color: #cccccc;
+        }
+
+        .toc {
+            margin-bottom: 60px;
+            padding: 30px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .toc h2 {
+            font-size: 1.5rem;
+            margin-bottom: 24px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .toc ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 12px;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: #888;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+
+        .toc a:hover {
+            color: #ffffff;
+        }
+
+        .section {
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #333;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .section h3 {
+            font-size: 1.3rem;
+            margin: 32px 0 16px 0;
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .section p {
+            margin-bottom: 16px;
+            color: #cccccc;
+        }
+
+        .section ul, .section ol {
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+
+        .section li {
+            margin-bottom: 8px;
+            color: #cccccc;
+        }
+
+        .section li strong {
+            color: #ffffff;
+        }
+
+        .highlight {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 3px solid #666;
+            margin: 24px 0;
+        }
+
+        .highlight strong {
+            color: #ffffff;
+        }
+
+        .warning {
+            background: #2d1a1a;
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 3px solid #d32f2f;
+            margin: 24px 0;
+        }
+
+        .warning strong {
+            color: #ff6b6b;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin: 24px 0;
+            border-radius: 6px;
+            border: 1px solid #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #1a1a1a;
+        }
+
+        th, td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+
+        th {
+            background: #000000;
+            color: #ffffff;
+            font-weight: 600;
+            border-bottom: 2px solid #333;
+        }
+
+        td {
+            color: #cccccc;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .contact-info {
+            background: #1a1a1a;
+            padding: 32px;
+            border-radius: 6px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 16px;
+            color: #ffffff;
+        }
+
+        .contact-info p {
+            margin-bottom: 8px;
+            color: #cccccc;
+        }
+
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #333;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            background: #555;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .toc ul {
+                grid-template-columns: 1fr;
+            }
+            
+            .features {
+                grid-template-columns: 1fr !important;
+            }
+            
+            .section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Grit - Terms of Use</h1>
+            <p>Welcome to Grit - Your daily companion for growth and motivation</p>
+            <div class="last-updated">Last Updated: July 16, 2025</div>
+        </div>
+
+        <div class="app-info">
+            <h2>About Grit</h2>
+            <div class="acronym">
+                <strong>G</strong>rowth • <strong>R</strong>esilience • <strong>I</strong>nitiative • <strong>T</strong>enacity
+            </div>
+            <p>Grit provides daily inspirational and motivational quotes tailored to your chosen areas of life improvement, helping you build the mental strength to achieve your goals.</p>
+            
+            <div class="features">
+                <div class="feature-item">
+                    <h3>50,000+ Quotes</h3>
+                    <p>Extensive collection across 50+ categories</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Life Areas</h3>
+                    <p>Personal growth, work, relationships, spirituality, and more</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Customization</h3>
+                    <p>Quote editor, themes, sounds, and daily dose settings</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Smart Reminders</h3>
+                    <p>Personalized daily notifications based on your schedule</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#acceptance">1. Acceptance of Terms</a></li>
+                <li><a href="#description">2. Service Description</a></li>
+                <li><a href="#eligibility">3. Eligibility</a></li>
+                <li><a href="#account">4. Account Registration</a></li>
+                <li><a href="#acceptable-use">5. Acceptable Use Policy</a></li>
+                <li><a href="#content-rights">6. Content and Intellectual Property</a></li>
+                <li><a href="#user-content">7. User-Generated Content</a></li>
+                <li><a href="#subscription">8. Subscription Terms</a></li>
+                <li><a href="#privacy">9. Privacy Policy</a></li>
+                <li><a href="#disclaimers">10. Disclaimers</a></li>
+                <li><a href="#limitation">11. Limitation of Liability</a></li>
+                <li><a href="#indemnification">12. Indemnification</a></li>
+                <li><a href="#termination">13. Termination</a></li>
+                <li><a href="#third-party">14. Third-Party Services</a></li>
+                <li><a href="#updates">15. Updates and Modifications</a></li>
+                <li><a href="#governing-law">16. Governing Law</a></li>
+                <li><a href="#contact">17. Contact Information</a></li>
+            </ul>
+        </div>
+
+        <div class="section" id="acceptance">
+            <h2>1. Acceptance of Terms</h2>
+            <p>By downloading, installing, accessing, or using the Grit mobile application ("App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
+            
+            <p>These Terms constitute a legally binding agreement between you and HeliosBytes ("Company," "we," "us," or "our"), the developer and operator of the Grit App.</p>
+            
+            <div class="highlight">
+                <strong>Important:</strong> By using the App, you confirm that you have read, understood, and agree to be bound by these Terms and our Privacy Policy, which is incorporated by reference.
+            </div>
+        </div>
+
+        <div class="section" id="description">
+            <h2>2. Service Description</h2>
+            <p>Grit is a mobile application that provides daily inspirational and motivational quotes designed to help users develop mental strength and achieve personal growth.</p>
+            
+            <h3>Key Features</h3>
+            <ul>
+                <li><strong>Quote Library:</strong> Access to 50,000+ carefully curated quotes across 50+ categories</li>
+                <li><strong>Life Area Customization:</strong> Personalized content based on your chosen areas of improvement:
+                    <ul>
+                        <li>Personal Growth</li>
+                        <li>Work & Leadership</li>
+                        <li>Knowledge & Learning</li>
+                        <li>Emotions & Experiences</li>
+                        <li>Creativity & Imagination</li>
+                        <li>Love & Relationships</li>
+                        <li>Spirituality</li>
+                        <li>Humanity & Society</li>
+                        <li>Happiness & Positivity</li>
+                    </ul>
+                </li>
+                <li><strong>Daily Dose Reminders:</strong> Customizable notification system for daily motivation</li>
+                <li><strong>Quote Editor:</strong> Create and customize quote images with various styles, colors, alignments, text sizes, background contrasts, and opacity settings</li>
+                <li><strong>App Themes:</strong> Multiple visual themes including dark, light, amoled, midnight, sunset, forest, ocean, lavender, and monochrome</li>
+                <li><strong>Nature Sounds:</strong> Soothing background sounds to enhance your experience</li>
+                <li><strong>Sharing Features:</strong> Save images to gallery, copy quote text, share to social media, and set as wallpaper</li>
+            </ul>
+            
+            <h3>Service Availability</h3>
+            <p>The App is available for download on mobile devices through official app stores. We reserve the right to modify, suspend, or discontinue any feature of the App at any time without prior notice.</p>
+        </div>
+
+        <div class="section" id="eligibility">
+            <h2>3. Eligibility</h2>
+            <p>To use the Grit App, you must meet the following eligibility requirements:</p>
+            
+            <h3>Age Requirements</h3>
+            <ul>
+                <li><strong>Global:</strong> You must be at least 13 years old</li>
+                <li><strong>European Union:</strong> You must be at least 16 years old or the age of digital consent in your country</li>
+                <li><strong>Parental Consent:</strong> If you are under 18, you must have parental or guardian consent to use the App</li>
+            </ul>
+            
+            <h3>Additional Requirements</h3>
+            <ul>
+                <li>You must have the legal capacity to enter into binding agreements</li>
+                <li>You must not be prohibited from using the App under applicable laws</li>
+                <li>You must provide accurate information during registration</li>
+                <li>You must comply with all applicable laws and regulations</li>
+            </ul>
+            
+            <div class="warning">
+                <strong>Important:</strong> If you are under the minimum age requirement, you are not permitted to use the App. We reserve the right to terminate accounts that do not meet eligibility requirements.
+            </div>
+        </div>
+
+        <div class="section" id="account">
+            <h2>4. Account Registration</h2>
+            <p>While basic features of the App may be accessible without registration, certain features require account creation.</p>
+            
+            <h3>Account Creation</h3>
+            <ul>
+                <li><strong>Optional Registration:</strong> You may choose to create an account using Google Sign-In</li>
+                <li><strong>Information Required:</strong> Name (optional), email address, and profile picture (from Google account)</li>
+                <li><strong>Account Security:</strong> You are responsible for maintaining the security of your account credentials</li>
+            </ul>
+            
+            <h3>Account Responsibilities</h3>
+            <ul>
+                <li>Provide accurate and complete information during registration</li>
+                <li>Maintain the security and confidentiality of your account</li>
+                <li>Notify us immediately of any unauthorized use of your account</li>
+                <li>Accept responsibility for all activities that occur under your account</li>
+                <li>Keep your account information up to date</li>
+            </ul>
+            
+            <h3>Account Termination</h3>
+            <p>You may delete your account at any time through the App settings. We may suspend or terminate your account if you violate these Terms or engage in prohibited activities.</p>
+        </div>
+
+        <div class="section" id="acceptable-use">
+            <h2>5. Acceptable Use Policy</h2>
+            <p>Your use of the Grit App must comply with this Acceptable Use Policy. You agree not to use the App for any unlawful or prohibited purpose.</p>
+            
+            <h3>Prohibited Activities</h3>
+            <p>You may not:</p>
+            <ul>
+                <li>Use the App for any illegal or unauthorized purpose</li>
+                <li>Violate any applicable laws, regulations, or third-party rights</li>
+                <li>Upload, share, or create content that is harmful, abusive, harassing, or offensive</li>
+                <li>Infringe on intellectual property rights of others</li>
+                <li>Distribute spam, malware, or other harmful content</li>
+                <li>Attempt to gain unauthorized access to the App or its systems</li>
+                <li>Interfere with or disrupt the App's functionality</li>
+                <li>Use automated tools to access the App without permission</li>
+                <li>Reverse engineer, decompile, or disassemble the App</li>
+                <li>Create derivative works based on the App</li>
+                <li>Use the App to compete with our services</li>
+                <li>Impersonate others or provide false information</li>
+            </ul>
+            
+            <h3>Content Guidelines</h3>
+            <p>When using the quote editor or sharing features, you must ensure that your content:</p>
+            <ul>
+                <li>Does not violate any laws or regulations</li>
+                <li>Does not infringe on third-party rights</li>
+                <li>Is not defamatory, obscene, or offensive</li>
+                <li>Does not contain hate speech or discriminatory language</li>
+                <li>Does not promote violence or illegal activities</li>
+            </ul>
+            
+            <h3>Enforcement</h3>
+            <p>We reserve the right to investigate violations of this policy and take appropriate action, including account suspension or termination, removal of content, and cooperation with law enforcement.</p>
+        </div>
+
+        <div class="section" id="content-rights">
+            <h2>6. Content and Intellectual Property</h2>
+            <p>The Grit App and its content are protected by intellectual property laws. Understanding these rights is important for proper use of the App.</p>
+            
+            <h3>Our Content</h3>
+            <p>We own or have licensed rights to:</p>
+            <ul>
+                <li>The Grit App software and its underlying code</li>
+                <li>The App's design, layout, and user interface</li>
+                <li>Our curated collection of quotes (where we have rights)</li>
+                <li>App themes, sounds, and other multimedia elements</li>
+                <li>The Grit trademark and branding</li>
+            </ul>
+            
+            <h3>Third-Party Content</h3>
+            <p>Many quotes in our collection are:</p>
+            <ul>
+                <li>In the public domain</li>
+                <li>Used under fair use or fair dealing principles</li>
+                <li>Licensed from third parties</li>
+                <li>Attributed to their original authors where known</li>
+            </ul>
+            
+            <h3>Your License to Use</h3>
+            <p>We grant you a limited, non-exclusive, non-transferable license to:</p>
+            <ul>
+                <li>Use the App for personal, non-commercial purposes</li>
+                <li>Create and share quote images using our editor</li>
+                <li>Share content through the App's sharing features</li>
+                <li>Save quote images to your device for personal use</li>
+            </ul>
+            
+            <h3>Restrictions</h3>
+            <p>You may not:</p>
+            <ul>
+                <li>Redistribute, sell, or commercially exploit our content</li>
+                <li>Remove attribution or copyright notices</li>
+                <li>Use our content in ways that may harm our reputation</li>
+                <li>Create competing products using our content</li>
+            </ul>
+            
+            <div class="highlight">
+                <strong>Copyright Notice:</strong> If you believe your copyrighted work has been used in the App without permission, please contact us at heliosbytes@gmail.com with details of the alleged infringement.
+            </div>
+        </div>
+
+        <div class="section" id="user-content">
+            <h2>7. User-Generated Content</h2>
+            <p>When you create or share content through the Grit App, certain terms apply to that content.</p>
+            
+            <h3>Content You Create</h3>
+            <p>You retain ownership of:</p>
+            <ul>
+                <li>Original text you add to quotes</li>
+                <li>Personal customizations and preferences</li>
+                <li>Images you create using the quote editor</li>
+            </ul>
+            
+            <h3>License to Us</h3>
+            <p>By creating content in the App, you grant us a limited license to:</p>
+            <ul>
+                <li>Store and process your content to provide the service</li>
+                <li>Display your content within the App</li>
+                <li>Enable sharing features you choose to use</li>
+                <li>Make technical copies for backup and security purposes</li>
+            </ul>
+            
+            <h3>Content Standards</h3>
+            <p>All user-generated content must:</p>
+            <ul>
+                <li>Comply with our Acceptable Use Policy</li>
+                <li>Not infringe on third-party rights</li>
+                <li>Be suitable for all ages</li>
+                <li>Not contain harmful or offensive material</li>
+            </ul>
+            
+            <h3>Content Removal</h3>
+            <p>We reserve the right to remove any user-generated content that violates these Terms, without prior notice.</p>
+        </div>
+
+        <div class="section" id="subscription">
+            <h2>8. Subscription Terms</h2>
+            <p>Grit may offer premium features through subscription plans. These terms govern any subscription purchases.</p>
+            
+            <h3>Subscription Features</h3>
+            <p>Premium subscriptions may include:</p>
+            <ul>
+                <li>Ad-free experience</li>
+                <li>Access to exclusive quote collections</li>
+                <li>Advanced customization options</li>
+                <li>Additional app themes and sounds</li>
+                <li>Priority customer support</li>
+            </ul>
+            
+            <h3>Billing and Payment</h3>
+            <ul>
+                <li><strong>Payment Processing:</strong> Handled through Google Play Store or Apple App Store</li>
+                <li><strong>Subscription Management:</strong> Managed through RevenueCat integration</li>
+                <li><strong>Billing Cycle:</strong> Monthly or annual as selected</li>
+                <li><strong>Auto-Renewal:</strong> Subscriptions automatically renew unless cancelled</li>
+                <li><strong>Price Changes:</strong> We may modify subscription prices with advance notice</li>
+            </ul>
+            
+            <h3>Cancellation and Refunds</h3>
+            <ul>
+                <li><strong>Cancellation:</strong> Cancel anytime through your app store account</li>
+                <li><strong>Refunds:</strong> Governed by app store policies</li>
+                <li><strong>Access After Cancellation:</strong> Premium features remain available until subscription expires</li>
+            </ul>
+            
+            <h3>Free Trials</h3>
+            <p>If offered, free trials:</p>
+            <ul>
+                <li>Provide full access to premium features during trial period</li>
+                <li>Automatically convert to paid subscription unless cancelled</li>
+                <li>May be limited to one per user</li>
+            </ul>
+        </div>
+
+        <div class="section" id="privacy">
+            <h2>9. Privacy Policy</h2>
+            <p>Your privacy is important to us. Our Privacy Policy explains how we collect, use, and protect your information.</p>
+            
+            <h3>Data Collection</h3>
+            <p>We collect information to provide and improve our services, including:</p>
+            <ul>
+                <li>Optional account information (name, email)</li>
+                <li>App usage data and analytics</li>
+                <li>Device information</li>
+                <li>Preferences and settings</li>
+            </ul>
+            
+            <h3>Data Usage</h3>
+            <p>We use your data to:</p>
+            <ul>
+                <li>Provide personalized quote recommendations</li>
+                <li>Send daily reminder notifications</li>
+                <li>Improve app functionality</li>
+                <li>Provide customer support</li>
+            </ul>
+            
+            <h3>Third-Party Services</h3>
+            <p>We use trusted third-party services:</p>
+            <ul>
+                <li><strong>Firebase:</strong> Authentication, storage, and analytics</li>
+                <li><strong>AdMob:</strong> Advertising services</li>
+                <li><strong>RevenueCat:</strong> Subscription management</li>
+            </ul>
+            
+            <h3>Your Rights</h3>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access your personal data</li>
+                <li>Correct inaccurate information</li>
+                <li>Delete your account and data</li>
+                <li>Control data processing preferences</li>
+            </ul>
+            
+            <div class="highlight">
+                <strong>Full Privacy Policy:</strong> Please review our complete Privacy Policy for detailed information about our data practices.
+            </div>
+        </div>
+
+        <div class="section" id="disclaimers">
+            <h2>10. Disclaimers</h2>
+            <p>Please read these important disclaimers about the Grit App and its content.</p>
+            
+            <h3>Service Availability</h3>
+            <p>The App is provided "as is" without warranties of any kind. We do not guarantee:</p>
+            <ul>
+                <li>Uninterrupted or error-free operation</li>
+                <li>Compatibility with all devices or operating systems</li>
+                <li>Availability of all features at all times</li>
+                <li>Accuracy of all quotes or their attributions</li>
+            </ul>
+            
+            <h3>Content Disclaimer</h3>
+            <p>The quotes and content in the App are for motivational and inspirational purposes only. They are not intended as:</p>
+            <ul>
+                <li>Professional medical, psychological, or therapeutic advice</li>
+                <li>Legal or financial guidance</li>
+                <li>Substitute for professional counseling</li>
+                <li>Treatment for mental health conditions</li>
+            </ul>
+            
+            <h3>Third-Party Content</h3>
+            <p>We make reasonable efforts to ensure quote accuracy and attribution, but we cannot guarantee:</p>
+            <ul>
+                <li>The accuracy of all quotes or their sources</li>
+                <li>That all quotes are correctly attributed</li>
+                <li>That we have rights to all quoted material</li>
+            </ul>
+            
+            <h3>Technical Limitations</h3>
+            <p>The App may experience:</p>
+            <ul>
+                <li>Temporary service interruptions</li>
+                <li>Compatibility issues with certain devices</li>
+                <li>Performance variations based on network conditions</li>
+                <li>Delays in content updates</li>
+            </ul>
+            
+            <div class="warning">
+                <strong>Important:</strong> If you are experiencing mental health issues, please consult with qualified healthcare professionals. The Grit App is not a substitute for professional help.
+            </div>
+        </div>
+
+        <div class="section" id="limitation">
+            <h2>11. Limitation of Liability</h2>
+            <p>To the fullest extent permitted by applicable law, HeliosBytes and its affiliates shall not be liable for any damages arising from your use of the Grit App.</p>
+            
+            <h3>Types of Damages Excluded</h3>
+            <p>We are not liable for:</p>
+            <ul>
+                <li>Direct, indirect, incidental, or consequential damages</li>
+                <li>Loss of profits, data, or business opportunities</li>
+                <li>Emotional distress or psychological harm</li>
+                <li>Damages resulting from third-party actions</li>
+                <li>Service interruptions or technical failures</li>
+                <li>Unauthorized access to your account or data</li>
+            </ul>
+            
+            <h3>Maximum Liability</h3>
+            <p>In jurisdictions where liability limitations are not permitted, our maximum liability is limited to:</p>
+            <ul>
+                <li>The amount you paid for the App in the 12 months preceding the claim</li>
+                <li>$100 USD if you have not made any payments</li>
+            </ul>
+            
+            <h3>Exceptions</h3>
+            <p>These limitations do not apply to:</p>
+            <ul>
+                <li>Gross negligence or willful misconduct</li>
+                <li>Fraud or fraudulent misrepresentation</li>
+                <li>Liability that cannot be excluded under applicable law</li>
+            </ul>
+            
+            <h3>Time Limitations</h3>
+            <p>Any claims must be brought within one year of the event giving rise to the claim.</p>
+        </div>
+
+        <div class="section" id="indemnification">
+            <h2>12. Indemnification</h2>
+            <p>You agree to indemnify and hold harmless HeliosBytes, its affiliates, and personnel from any claims, damages, or expenses arising from your use of the App.</p>
+            
+            <h3>Your Indemnification Obligations</h3>
+            <p>You will indemnify us against claims arising from:</p>
+            <ul>
+                <li>Your violation of these Terms</li>
+                <li>Your violation of applicable laws</li>
+                <li>Your infringement of third-party rights</li>
+                <li>Your use of the App in prohibited ways</li>
+                <li>Content you create or share through the App</li>
+                <li>Your breach of representations or warranties</li>
+            </ul>
+            
+            <h3>Defense of Claims</h3>
+            <p>You agree to:</p>
+            <ul>
+                <li>Defend us against covered claims</li>
+                <li>Pay resulting damages and costs</li>
+                <li>Cooperate with our defense efforts</li>
+                <li>Not settle claims without our consent</li>
+            </ul>
+            
+            <h3>Our Rights</h3>
+            <p>We reserve the right to:</p>
+            <ul>
+                <li>Participate in the defense of any claim</li>
+                <li>Approve any settlement or resolution</li>
+                <li>Take control of defense if necessary</li>
+            </ul>
+        </div>
+
+        <div class="section" id="termination">
+            <h2>13. Termination</h2>
+            <p>These Terms remain in effect until terminated by either you or HeliosBytes.</p>
+            
+            <h3>Termination by You</h3>
+            <p>You may terminate your account and stop using the App at any time by:</p>
+            <ul>
+                <li>Uninstalling the App from your device</li>
+                <li>Deleting your account through App settings</li>
+                <li>Cancelling any active subscriptions</li>
+                <li>Ceasing to use the App</li>
+            </ul>
+            
+            <h3>Termination by Us</h3>
+            <p>We may terminate or suspend your access immediately, without notice, if you:</p>
+            <ul>
+                <li>Violate these Terms or our Acceptable Use Policy</li>
+                <li>Engage in illegal or harmful activities</li>
+                <li>Infringe on third-party rights</li>
+                <li>Abuse or misuse the App</li>
+                <li>Fail to pay subscription fees</li>
+                <li>Provide false information</li>
+            </ul>
+            
+            <h3>Effects of Termination</h3>
+            <p>Upon termination:</p>
+            <ul>
+                <li>Your right to use the App immediately ceases</li>
+                <li>Your account and data may be deleted</li>
+                <li>Outstanding payments become immediately due</li>
+                <li>Subscription benefits end (subject to refund policies)</li>
+                <li>These Terms continue to apply to past use</li>
+            </ul>
+            
+            <h3>Survival</h3>
+            <p>The following sections survive termination:</p>
+            <ul>
+                <li>Intellectual Property Rights</li>
+                <li>Disclaimers</li>
+                <li>Limitation of Liability</li>
+                <li>Indemnification</li>
+                <li>Governing Law</li>
+            </ul>
+        </div>
+
+        <div class="section" id="third-party">
+            <h2>14. Third-Party Services</h2>
+            <p>The Grit App integrates with various third-party services to enhance functionality. Your use of these services is subject to their respective terms.</p>
+            
+            <h3>Integrated Services</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Purpose</th>
+                            <th>Provider</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Firebase Authentication</td>
+                            <td>User account management and Google Sign-In</td>
+                            <td>Google LLC</td>
+                        </tr>
+                        <tr>
+                            <td>Cloud Firestore</td>
+                            <td>Database storage and synchronization</td>
+                            <td>Google LLC</td>
+                        </tr>
+                        <tr>
+                            <td>Firebase Analytics</td>
+                            <td>App usage analytics and performance monitoring</td>
+                            <td>Google LLC</td>
+                        </tr>
+                        <tr>
+                            <td>Firebase Storage</td>
+                            <td>Cloud storage for user data and app assets</td>
+                            <td>Google LLC</td>
+                        </tr>
+                        <tr>
+                            <td>AdMob</td>
+                            <td>Advertising services for free app version</td>
+                            <td>Google LLC</td>
+                        </tr>
+                        <tr>
+                            <td>RevenueCat</td>
+                            <td>Subscription management and billing</td>
+                            <td>RevenueCat, Inc.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3>Third-Party Terms</h3>
+            <p>By using the App, you also agree to:</p>
+            <ul>
+                <li><strong>Google Terms of Service:</strong> For Firebase and AdMob services</li>
+                <li><strong>RevenueCat Terms of Service:</strong> For subscription management</li>
+                <li><strong>Google Play Store Terms:</strong> For Android app distribution</li>
+                <li><strong>Apple App Store Terms:</strong> For iOS app distribution</li>
+            </ul>
+            
+            <h3>Third-Party Advertising</h3>
+            <p>The free version of the App displays advertisements through AdMob:</p>
+            <ul>
+                <li>Ads are provided by Google and third-party advertisers</li>
+                <li>Ad content is not controlled by HeliosBytes</li>
+                <li>Advertising data collection is governed by Google's privacy policies</li>
+                <li>You may opt out of personalized advertising through device settings</li>
+            </ul>
+            
+            <h3>Disclaimer for Third-Party Services</h3>
+            <p>We are not responsible for:</p>
+            <ul>
+                <li>Third-party service availability or performance</li>
+                <li>Changes to third-party terms or policies</li>
+                <li>Third-party data practices</li>
+                <li>Issues arising from third-party service use</li>
+            </ul>
+        </div>
+
+        <div class="section" id="updates">
+            <h2>15. Updates and Modifications</h2>
+            <p>We may update the App and these Terms from time to time to improve functionality and comply with legal requirements.</p>
+            
+            <h3>App Updates</h3>
+            <p>We may provide updates to:</p>
+            <ul>
+                <li>Add new features and quote categories</li>
+                <li>Improve app performance and stability</li>
+                <li>Fix bugs and security vulnerabilities</li>
+                <li>Enhance user experience</li>
+                <li>Comply with platform requirements</li>
+            </ul>
+            
+            <h3>Terms Updates</h3>
+            <p>We may modify these Terms to:</p>
+            <ul>
+                <li>Reflect changes in app functionality</li>
+                <li>Comply with legal requirements</li>
+                <li>Address new circumstances or issues</li>
+                <li>Improve clarity and user understanding</li>
+            </ul>
+            
+            <h3>Notification of Changes</h3>
+            <p>We will notify you of material changes through:</p>
+            <ul>
+                <li>In-app notifications</li>
+                <li>Email notifications (if provided)</li>
+                <li>Updates to the "Last Updated" date</li>
+                <li>Prominent notice in the App</li>
+            </ul>
+            
+            <h3>Acceptance of Changes</h3>
+            <p>By continuing to use the App after changes take effect, you accept the updated Terms. If you do not agree to the changes, you must stop using the App.</p>
+            
+            <div class="highlight">
+                <strong>Important:</strong> Please review these Terms periodically for updates. Material changes will be effective 30 days after posting unless otherwise specified.
+            </div>
+        </div>
+
+        <div class="section" id="governing-law">
+            <h2>16. Governing Law</h2>
+            <p>These Terms and your use of the Grit App are governed by applicable laws and regulations.</p>
+            
+            <h3>Applicable Law</h3>
+            <p>These Terms are governed by and construed in accordance with:</p>
+            <ul>
+                <li>The laws of the jurisdiction where HeliosBytes is incorporated</li>
+                <li>Applicable international laws and treaties</li>
+                <li>Local laws where you use the App</li>
+            </ul>
+            
+            <h3>Dispute Resolution</h3>
+            <p>For any disputes arising from these Terms or your use of the App:</p>
+            <ul>
+                <li><strong>Informal Resolution:</strong> We encourage contacting us first to resolve disputes informally</li>
+                <li><strong>Mediation:</strong> If informal resolution fails, disputes may be resolved through mediation</li>
+                <li><strong>Arbitration:</strong> Where permitted by law, disputes may be subject to binding arbitration</li>
+                <li><strong>Court Jurisdiction:</strong> Courts with jurisdiction as determined by applicable law</li>
+            </ul>
+            
+            <h3>Class Action Waiver</h3>
+            <p>Where permitted by law, you agree to resolve disputes individually and waive the right to participate in class action lawsuits.</p>
+            
+            <h3>International Users</h3>
+            <p>If you use the App outside our primary jurisdiction:</p>
+            <ul>
+                <li>Local laws may provide additional rights</li>
+                <li>These Terms do not limit rights that cannot be waived</li>
+                <li>Consumer protection laws may apply</li>
+                <li>Data protection regulations (such as GDPR) may apply</li>
+            </ul>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>17. Contact Information</h2>
+            <p>We welcome your questions, concerns, and feedback about the Grit App and these Terms.</p>
+            
+            <h3>Customer Support</h3>
+            <p>For general support and questions about the App:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:heliosbytes@gmail.com">heliosbytes@gmail.com</a></li>
+                <li><strong>Response Time:</strong> We aim to respond within 48 hours</li>
+                <li><strong>Support Hours:</strong> Monday-Friday, 9 AM - 6 PM (local time)</li>
+            </ul>
+            
+            <h3>Legal Inquiries</h3>
+            <p>For legal matters, copyright issues, or Terms-related questions:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:heliosbytes@gmail.com">heliosbytes@gmail.com</a></li>
+                <li><strong>Subject Line:</strong> "Legal Inquiry - Grit App"</li>
+                <li><strong>Required Information:</strong> Detailed description of your inquiry</li>
+            </ul>
+            
+            <h3>Privacy Concerns</h3>
+            <p>For privacy-related questions or data requests:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:heliosbytes@gmail.com">heliosbytes@gmail.com</a></li>
+                <li><strong>Subject Line:</strong> "Privacy Inquiry - Grit App"</li>
+                <li><strong>Data Rights:</strong> Access, correction, deletion requests</li>
+            </ul>
+            
+            <h3>Business Inquiries</h3>
+            <p>For partnership or business-related matters:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:heliosbytes@gmail.com">heliosbytes@gmail.com</a></li>
+                <li><strong>Subject Line:</strong> "Business Inquiry - Grit App"</li>
+            </ul>
+            
+            <h3>Feedback and Suggestions</h3>
+            <p>We value your feedback to improve the App:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:heliosbytes@gmail.com">heliosbytes@gmail.com</a></li>
+                <li><strong>Subject Line:</strong> "Feedback - Grit App"</li>
+                <li><strong>App Store Reviews:</strong> Leave reviews on Google Play Store or Apple App Store</li>
+            </ul>
+        </div>
+
+        <div class="contact-info">
+            <h2>Thank You for Using Grit</h2>
+            <p>We appreciate your trust in Grit to support your personal growth journey.</p>
+            <p>Remember: Growth • Resilience • Initiative • Tenacity</p>
+            <p>For any questions or support, contact us at <a href="mailto:heliosbytes@gmail.com">heliosbytes@gmail.com</a></p>
+        </div>
+    </div>
+
+    <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Top</button>
+
+    <script>
+        // Show/hide back to top button
+        window.addEventListener('scroll', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

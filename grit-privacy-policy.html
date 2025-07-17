@@ -1,80 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy - Grit</title>
-  <link rel="stylesheet" href="./policy-styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grit Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background-color: #000000;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            margin-bottom: 60px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+            padding-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #ffffff;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #888;
+            margin-bottom: 24px;
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .toc {
+            margin-bottom: 60px;
+            padding: 30px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .toc h2 {
+            font-size: 1.5rem;
+            margin-bottom: 24px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .toc ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 12px;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: #888;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+
+        .toc a:hover {
+            color: #ffffff;
+        }
+
+        .section {
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #333;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .section h3 {
+            font-size: 1.3rem;
+            margin: 32px 0 16px 0;
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .section p {
+            margin-bottom: 16px;
+            color: #cccccc;
+        }
+
+        .section ul, .section ol {
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+
+        .section li {
+            margin-bottom: 8px;
+            color: #cccccc;
+        }
+
+        .section li strong {
+            color: #ffffff;
+        }
+
+        .highlight {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 3px solid #666;
+            margin: 24px 0;
+        }
+
+        .highlight strong {
+            color: #ffffff;
+        }
+
+        .summary {
+            background: #1a1a1a;
+            border-radius: 6px;
+            padding: 32px;
+            margin-bottom: 60px;
+        }
+
+        .summary h2 {
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+            color: #ffffff;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 24px;
+        }
+
+        .summary-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .summary-item p {
+            font-size: 0.95rem;
+            color: #cccccc;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin: 24px 0;
+            border-radius: 6px;
+            border: 1px solid #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #1a1a1a;
+        }
+
+        th, td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+
+        th {
+            background: #000000;
+            color: #ffffff;
+            font-weight: 600;
+            border-bottom: 2px solid #333;
+        }
+
+        td {
+            color: #cccccc;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .contact-info {
+            background: #1a1a1a;
+            padding: 32px;
+            border-radius: 6px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 16px;
+            color: #ffffff;
+        }
+
+        .contact-info p {
+            margin-bottom: 8px;
+            color: #cccccc;
+        }
+
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #333;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            background: #555;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .toc ul {
+                grid-template-columns: 1fr;
+            }
+            
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="logo">
-        <div class="logo-text">Grit</div>
-      </div>
-      <div class="contact-info">support@orizn.com</div>
-    </header>
+    <div class="container">
+        <div class="header">
+            <h1>Grit Privacy Policy</h1>
+            <p>Your privacy is our priority. Learn how we protect your personal information.</p>
+            <div class="last-updated">Last Updated: July 16, 2025</div>
+        </div>
 
-    <main>
-      <section class="left-content">
-        <h1 class="main-title">Privacy Policy</h1>
+        <div class="summary">
+            <h2>Key Points Summary</h2>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <h3>What We Collect</h3>
+                    <p>Optional name, Google sign-in data, device information, app usage analytics.</p>
+                </div>
+                <div class="summary-item">
+                    <h3>No Sensitive Data</h3>
+                    <p>We don't collect sensitive personal information like race, religion, or health data</p>
+                </div>
+                <div class="summary-item">
+                    <h3>Your Rights</h3>
+                    <p>Access, update, or delete your data anytime. Withdraw consent when applicable</p>
+                </div>
+                <div class="summary-item">
+                    <h3>Data Security</h3>
+                    <p>Encrypted storage with Google Firebase and industry-standard security measures</p>
+                </div>
+            </div>
+        </div>
 
-        <p><strong>Effective Date:</strong> June 5, 2025</p>
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#info-collect">1. Information We Collect</a></li>
+                <li><a href="#info-process">2. How We Process Information</a></li>
+                <li><a href="#legal-bases">3. Legal Bases</a></li>
+                <li><a href="#info-sharing">4. Information Sharing</a></li>
+                <li><a href="#third-party">5. Third-Party Websites</a></li>
+                <li><a href="#cookies">6. Cookies & Tracking</a></li>
+                <li><a href="#social-logins">7. Social Logins</a></li>
+                <li><a href="#international">8. International Transfers</a></li>
+                <li><a href="#retention">9. Data Retention</a></li>
+                <li><a href="#security">10. Information Security</a></li>
+                <li><a href="#privacy-rights">11. Privacy Rights</a></li>
+                <li><a href="#do-not-track">12. Do-Not-Track</a></li>
+                <li><a href="#us-rights">13. US Residents Rights</a></li>
+                <li><a href="#other-regions">14. Other Regions</a></li>
+                <li><a href="#children">15. Children's Privacy</a></li>
+                <li><a href="#updates">16. Policy Updates</a></li>
+                <li><a href="#contact">17. Contact Us</a></li>
+                <li><a href="#data-management">18. Data Management</a></li>
+            </ul>
+        </div>
 
-        <p>Welcome to <strong>Grit</strong>, a quotes app developed by <strong>Orizn</strong>. Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your personal information when you use our app.</p>
+        <div class="section" id="info-collect">
+            <h2>1. What Information Do We Collect?</h2>
+            
+            <h3>Information You Provide</h3>
+            <ul>
+                <li><strong>Name:</strong> Optional during registration</li>
+                <li><strong>Authentication Data:</strong> Google Sign-In through Firebase OAuth (optional)</li>
+                <li><strong>Social Media Profile:</strong> Name, email, profile picture from social login</li>
+            </ul>
 
-        <!-- <h2>Developer Information</h2>
-        <p><strong>Developer Name:</strong> Orizn</p>
-        <p><strong>Contact Email:</strong> <a href="mailto:support@orizn.com">support@orizn.com</a></p>
-        <p><strong>Website:</strong> <a href="http://www.orizn.com" target="_blank" rel="noopener noreferrer">www.orizn.com</a></p> -->
+            <h3>Grit App Specific Data</h3>
+            <ul>
+                <li><strong>Liked Quotes:</strong> Quotes you've marked as favorites or liked</li>
+                <li><strong>User Quotes:</strong> Any custom quotes you've created or saved</li>
+                <li><strong>Quote Images:</strong> Images you've created using our quote editor (stored in Firebase Storage)</li>
+            </ul>
 
-        <h2>1. Information We Collect</h2>
-        <p>When you use Grit, we collect the following information:</p>
-        <ul>
-          <li><strong>Google OAuth Data:</strong> Your name and email address, which you provide when you sign in using Google OAuth.</li>
-          <li><strong>User-Generated Content:</strong> The quotes you create and save within the app.</li>
-        </ul>
+            <h3>Data Stored Locally Only (Not Collected by Us)</h3>
+            <ul>
+                <li><strong>Life Area Preferences:</strong> Your chosen areas of improvement (Personal Growth, Work & Leadership, Knowledge & Learning, Emotions & Experiences, Creativity & Imagination, Love & Relationships, Spirituality, Humanity & Society, Happiness & Positivity)</li>
+                <li><strong>Daily Dose Settings:</strong> Reminder frequency, timing preferences, and notification settings</li>
+                <li><strong>App Theme Preferences:</strong> Your selected app themes (dark, light, amoled, midnight, sunset, forest, ocean, lavender, monochrome)</li>
+                <li><strong>Quote Editor Settings:</strong> Quote customizations (color, alignment, style, text size, background contrast, opacity)</li>
+                <li><strong>Audio Preferences:</strong> Background sounds settings and preferences</li>
+                <li><strong>Category Selections:</strong> Your preferences from our 50+ available quote categories</li>
+            </ul>
 
-        <h2>2. How We Use Your Information</h2>
-        <p>We use the information collected to:</p>
-        <ul>
-          <li>Personalize your experience by addressing you by name.</li>
-          <li>Allow you to save and manage your created quotes.</li>
-          <li>Communicate with you regarding your account and app updates (only if you opt-in to receive such communications).</li>
-        </ul>
+            <h3>Automatically Collected Information</h3>
+            <ul>
+                <li><strong>Device Data:</strong> Mobile device ID, model, manufacturer, operating system, app version</li>
+                <li><strong>Usage Data:</strong> App features accessed, timestamps, user interactions, session duration</li>
+                <li><strong>Location Data:</strong> General location based on IP address (approximate location only)</li>
+                <li><strong>Subscription Data:</strong> Purchase history, subscription status via RevenueCat</li>
+                <li><strong>Advertising Data:</strong> Advertising ID, ad interaction data via AdMob</li>
+                <li><strong>Performance Data:</strong> Crash logs, diagnostics, and app performance metrics</li>
+            </ul>
 
-        <h2>3. Data Sharing and Disclosure</h2>
-        <p>We do <strong>not</strong> sell, trade, or rent your personal information to third parties.</p>
-        <p>We may share your information with trusted third-party services that help us operate the app (such as authentication providers), but only to the extent necessary and under strict confidentiality agreements.</p>
+            <h3>Device Permissions</h3>
+            <ul>
+                <li><strong>Storage Permission:</strong> To save quote images to your device gallery (Optional)</li>
+                <li><strong>Notification Permission:</strong> To send daily motivational reminders (Optional)</li>
+                <li><strong>Internet Permission:</strong> To sync quotes and display ads</li>
+            </ul>
 
-        <h2>4. Data Security</h2>
-        <p>We take reasonable technical and organizational measures to protect your information from unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet or electronic storage is 100% secure.</p>
+            <div class="highlight">
+                <strong>Important:</strong> We do NOT collect sensitive personal information such as race, religion, sexual orientation, health data, or precise location data. Our app is designed for users 13 years and older. We collect only the minimum data necessary to provide our services and follow data minimization principles.
+            </div>
+        </div>
 
-        <h2>5. Data Retention and Deletion</h2>
-        <p>We retain your personal data only as long as necessary to provide our services or comply with legal obligations. You may request the deletion of your personal data by contacting us at <a href="mailto:support@orizn.com">support@orizn.com</a>. Upon such request, we will delete your personal data unless we are required by law to retain it.</p>
+        <div class="section" id="info-process">
+            <h2>2. How We Process Your Information</h2>
+            <p>We process your information for the following purposes and will not use your data beyond these stated purposes:</p>
+            <ul>
+                <li>Account creation and authentication</li>
+                <li>Sending daily reminder notifications according to your schedule</li>
+                <li>Customer support and user inquiries</li>
+                <li>App improvement and analytics</li>
+                <li>Security and fraud prevention</li>
+                <li>Legal compliance</li>
+                <li>Providing personalized advertisements through AdMob</li>
+            </ul>
+            
+            <div class="highlight">
+                <strong>Data Processing Principles:</strong> We process your data fairly, lawfully, and transparently. We use your data only for the purposes stated above and do not engage in any secondary use of your personal information without your explicit consent.
+            </div>
+        </div>
 
-        <h2>6. Your Rights</h2>
-        <p>You have the right to:</p>
-        <ul>
-          <li>Access the personal data we hold about you.</li>
-          <li>Request correction or deletion of your personal data.</li>
-          <li>Withdraw consent to data processing where applicable.</li>
-        </ul>
-        <p>To exercise these rights, please contact us at <a href="mailto:support@orizn.com">support@orizn.com</a>.</p>
+        <div class="section" id="legal-bases">
+            <h2>3. Legal Bases for Processing</h2>
+            <p>We process your information based on the following legal bases, matched to specific processing activities:</p>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Processing Activity</th>
+                            <th>Legal Basis</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Account creation, authentication</td>
+                            <td>Contract Performance</td>
+                            <td>Necessary to provide our services</td>
+                        </tr>
+                        <tr>
+                            <td>Personalized quotes, notifications</td>
+                            <td>Consent</td>
+                            <td>Based on your explicit permission</td>
+                        </tr>
+                        <tr>
+                            <td>App analytics, improvement</td>
+                            <td>Legitimate Interests</td>
+                            <td>To improve app functionality and user experience</td>
+                        </tr>
+                        <tr>
+                            <td>Security, fraud prevention</td>
+                            <td>Legitimate Interests</td>
+                            <td>To protect users and our services</td>
+                        </tr>
+                        <tr>
+                            <td>Legal compliance, data retention</td>
+                            <td>Legal Obligations</td>
+                            <td>Required by applicable laws</td>
+                        </tr>
+                        <tr>
+                            <td>Personalized advertising</td>
+                            <td>Consent</td>
+                            <td>Based on your advertising preferences</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-        <h2>7. Children’s Privacy</h2>
-        <p>Grit is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal data, please contact us to request deletion.</p>
+            <p><strong>Consent Withdrawal:</strong> Where processing is based on consent, you can withdraw your consent at any time through app settings or by contacting us. This will not affect the lawfulness of processing based on consent before withdrawal.</p>
+        </div>
 
-        <h2>8. Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time. If we make material changes, we will notify you by posting the new Privacy Policy on this page and, where appropriate, through in-app notifications or emails.</p>
+        <div class="section" id="info-sharing">
+            <h2>4. Information Sharing</h2>
+            <p>We share information with trusted third-party service providers under strict data processing agreements:</p>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service Category</th>
+                            <th>Provider</th>
+                            <th>Purpose</th>
+                            <th>Data Shared</th>
+                            <th>Transfer Mechanism</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Analytics</td>
+                            <td>Firebase Analytics</td>
+                            <td>App usage insights</td>
+                            <td>Usage patterns, device info</td>
+                            <td>Google Cloud adequacy decision</td>
+                        </tr>
+                        <tr>
+                            <td>Cloud Storage</td>
+                            <td>Google Cloud Platform</td>
+                            <td>Secure data storage</td>
+                            <td>User preferences, quotes data</td>
+                            <td>Google Cloud adequacy decision</td>
+                        </tr>
+                        <tr>
+                            <td>Authentication</td>
+                            <td>Firebase OAuth</td>
+                            <td>User sign-in</td>
+                            <td>Name, email, profile picture</td>
+                            <td>Google Cloud adequacy decision</td>
+                        </tr>
+                        <tr>
+                            <td>Advertising</td>
+                            <td>AdMob (Google)</td>
+                            <td>Relevant ads</td>
+                            <td>Advertising ID, usage data</td>
+                            <td>Google Cloud adequacy decision</td>
+                        </tr>
+                        <tr>
+                            <td>Subscriptions</td>
+                            <td>RevenueCat</td>
+                            <td>Payment processing</td>
+                            <td>Purchase history, subscription status</td>
+                            <td>Standard Contractual Clauses</td>
+                        </tr>
+                        <tr>
+                            <td>Cloud Storage</td>
+                            <td>Firebase Storage</td>
+                            <td>Quote images and media</td>
+                            <td>User-generated content</td>
+                            <td>Google Cloud adequacy decision</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-        <h2>9. Contact Us</h2>
-        <p>If you have questions or concerns about this Privacy Policy or your personal data, please contact us at:</p>
-        <p><strong>Email:</strong> <a href="mailto:support@orizn.com">support@orizn.com</a></p>
-      </section>
-    </main>
-  </div>
+            <p>We do not sell, trade, or otherwise transfer your personal information to third parties for their marketing purposes. All third-party service providers are contractually bound to protect your data and use it only for the specified purposes.</p>
+        </div>
 
-  <footer>
-    &copy; 2025 Orizn. All rights reserved.
-  </footer>
+        <div class="section" id="third-party">
+            <h2>5. Third-Party Websites and Services</h2>
+            <p>Our app may contain links to third-party websites or integrate with third-party services. This privacy policy does not apply to such third-party websites or services.</p>
+            
+            <h3>Social Media Sharing</h3>
+            <p>When you share quotes to social media platforms, you are subject to those platforms' privacy policies and terms of service.</p>
+            
+            <h3>Google Services</h3>
+            <p>We use various Google services (Firebase, AdMob, Google Cloud). Google's privacy policy applies to their processing of your data: <a href="https://policies.google.com/privacy" style="color: #ffffff;">https://policies.google.com/privacy</a></p>
+            
+            <div class="highlight">
+                <strong>Important:</strong> We are not responsible for the privacy practices of third-party websites or services. Please review their privacy policies before providing any personal information.
+            </div>
+        </div>
+
+        <div class="section" id="consent-management">
+            <h2>6. Consent Management</h2>
+            <p>You have granular control over your consent for different data processing activities:</p>
+            
+            <h3>Managing Your Consent</h3>
+            <ul>
+                <li><strong>Personalized Quotes:</strong> Enable/disable in Settings > Personalization</li>
+                <li><strong>Push Notifications:</strong> Manage in Settings > Notifications or device settings</li>
+                <li><strong>Analytics:</strong> Opt-out in Settings > Privacy</li>
+                <li><strong>Personalized Ads:</strong> Control through device settings or Google Ad Settings</li>
+                <li><strong>Data Processing:</strong> Contact us to withdraw consent for specific processing</li>
+            </ul>
+            
+            <h3>Consent Withdrawal</h3>
+            <p>You can withdraw your consent at any time without affecting the lawfulness of processing based on consent before withdrawal. Withdrawing consent may limit certain app functionalities.</p>
+            
+            <div class="highlight">
+                <strong>Easy Opt-Out:</strong> Use our in-app privacy controls or contact heliosbytes@gmail.com to manage your consent preferences.
+            </div>
+        </div>
+
+        <div class="section" id="data-breach">
+            <h2>7. Data Breach Response</h2>
+            <p>We have comprehensive procedures in place to handle potential data breaches:</p>
+            
+            <h3>Our Response Process</h3>
+            <ul>
+                <li><strong>Detection:</strong> 24/7 monitoring and automated alerts</li>
+                <li><strong>Assessment:</strong> Immediate risk evaluation within 1 hour</li>
+                <li><strong>Containment:</strong> Immediate steps to stop the breach</li>
+                <li><strong>Investigation:</strong> Root cause analysis and impact assessment</li>
+                <li><strong>Notification:</strong> Users and authorities notified as required by law</li>
+            </ul>
+            
+            <h3>User Notification</h3>
+            <p>In case of a data breach that may affect your rights and freedoms, we will:</p>
+            <ul>
+                <li>Notify you within 72 hours of discovery</li>
+                <li>Provide clear information about the breach</li>
+                <li>Explain the likely consequences</li>
+                <li>Describe measures taken to address the breach</li>
+                <li>Provide recommendations for protecting yourself</li>
+            </ul>
+        </div>
+
+        <div class="section" id="cookies">
+            <h2>6. Cookies & Tracking Technologies</h2>
+            <p>We use various tracking technologies to enhance your experience:</p>
+            
+            <h3>Types of Tracking Technologies</h3>
+            <ul>
+                <li><strong>Analytics Cookies:</strong> Firebase Analytics to understand app usage patterns</li>
+                <li><strong>Advertising Cookies:</strong> AdMob for personalized advertising</li>
+                <li><strong>Functional Cookies:</strong> To remember your preferences and settings</li>
+                <li><strong>Session Data:</strong> To maintain your login state and app preferences</li>
+            </ul>
+            
+            <h3>Mobile App Identifiers</h3>
+            <ul>
+                <li><strong>Advertising ID:</strong> Used for personalized ads and analytics</li>
+                <li><strong>Device ID:</strong> For app functionality and security</li>
+                <li><strong>Firebase Installation ID:</strong> For analytics and app services</li>
+            </ul>
+            
+            <h3>Managing Tracking</h3>
+            <p>You can limit ad tracking through your device settings:</p>
+            <ul>
+                <li><strong>iOS:</strong> Settings > Privacy & Security > Apple Advertising > Limit Ad Tracking</li>
+                <li><strong>Android:</strong> Settings > Google > Ads > Opt out of Ads Personalization</li>
+            </ul>
+        </div>
+
+        <div class="section" id="social-logins">
+            <h2>7. Social Logins</h2>
+            <p>We offer Google Sign-In for your convenience through Firebase OAuth.</p>
+            
+            <h3>Google Sign-In Data</h3>
+            <p>When you sign in with Google, we receive:</p>
+            <ul>
+                <li>Name</li>
+                <li>Email address</li>
+                <li>Profile picture</li>
+                <li>Google account ID</li>
+            </ul>
+            
+            <h3>Data Usage</h3>
+            <p>This information is used solely for:</p>
+            <ul>
+                <li>Account creation and authentication</li>
+                <li>Personalizing your app experience</li>
+                <li>Providing customer support</li>
+            </ul>
+            
+            <p>You can disconnect your Google account from Grit at any time through your device's account settings.</p>
+        </div>
+
+        <div class="section" id="international">
+            <h2>8. International Data Transfers</h2>
+            <p>Your information may be transferred to and processed in countries other than your country of residence.</p>
+            
+            <h3>Data Transfer Locations</h3>
+            <ul>
+                <li><strong>Primary Storage:</strong> Google Cloud Platform servers (United States)</li>
+                <li><strong>Processing:</strong> New Delhi, India </li>
+                <li><strong>Third-Party Services:</strong> United States (Google, RevenueCat servers)</li>
+            </ul>
+            
+            <h3>Transfer Safeguards</h3>
+            <p>We ensure appropriate safeguards are in place:</p>
+            <ul>
+                <li>Google Cloud Platform's global security and compliance measures</li>
+                <li>Standard Contractual Clauses (SCCs) with service providers</li>
+                <li>Adherence to applicable data protection laws</li>
+                <li>Encryption in transit and at rest</li>
+            </ul>
+            
+            <div class="highlight">
+                <strong>EU/UK Users:</strong> Data transfers are conducted in accordance with GDPR requirements using appropriate transfer mechanisms.
+            </div>
+        </div>
+
+        <div class="section" id="retention">
+            <h2>9. Data Retention</h2>
+            <p>We retain your information only as long as necessary for the purposes outlined in this policy.</p>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data Type</th>
+                            <th>Retention Period</th>
+                            <th>Reason</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Account Information</td>
+                            <td>Until account deletion</td>
+                            <td>Service provision</td>
+                        </tr>
+                        <tr>
+                            <td>Quote Preferences</td>
+                            <td>Until account deletion</td>
+                            <td>Personalization</td>
+                        </tr>
+                        <tr>
+                            <td>Usage Analytics</td>
+                            <td>26 months</td>
+                            <td>App improvement</td>
+                        </tr>
+                        <tr>
+                            <td>Crash Logs</td>
+                            <td>90 days</td>
+                            <td>Bug fixes</td>
+                        </tr>
+                        <tr>
+                            <td>Support Inquiries</td>
+                            <td>2 years</td>
+                            <td>Customer service</td>
+                        </tr>
+                        <tr>
+                            <td>Subscription Data</td>
+                            <td>7 years</td>
+                            <td>Legal compliance</td>
+                        </tr>
+                        <tr>
+                            <td>Advertising Data</td>
+                            <td>2 years</td>
+                            <td>Ad personalization</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3>Automatic Deletion</h3>
+            <p>Some data is automatically deleted:</p>
+            <ul>
+                <li>Session data when you close the app</li>
+                <li>Temporary cache files periodically</li>
+                <li>Old analytics data after retention periods</li>
+            </ul>
+        </div>
+
+        <div class="section" id="security">
+            <h2>10. How We Keep Your Information Safe</h2>
+            <p>We implement comprehensive security measures to protect your personal information:</p>
+            
+            <h3>Technical Safeguards</h3>
+            <ul>
+                <li><strong>Encryption:</strong> Data encrypted in transit (TLS 1.2+) and at rest (AES-256)</li>
+                <li><strong>Firebase Security:</strong> Google's enterprise-grade security infrastructure</li>
+                <li><strong>Access Controls:</strong> Role-based access with multi-factor authentication</li>
+                <li><strong>Regular Security Audits:</strong> Automated and manual security assessments</li>
+                <li><strong>Secure APIs:</strong> All API endpoints protected with authentication</li>
+            </ul>
+            
+            <h3>Operational Safeguards</h3>
+            <ul>
+                <li>Employee training on data protection</li>
+                <li>Incident response procedures</li>
+                <li>Regular security updates and patches</li>
+                <li>Monitoring and alerting systems</li>
+                <li>Secure development practices</li>
+            </ul>
+            
+            <h3>Data Breach Response</h3>
+            <p>In the event of a data breach, we will:</p>
+            <ul>
+                <li>Notify affected users within 72 hours</li>
+                <li>Report to relevant authorities as required by law</li>
+                <li>Take immediate steps to contain the breach</li>
+                <li>Provide regular updates on our response</li>
+            </ul>
+            
+            <div class="highlight">
+                <strong>Note:</strong> While we use industry-standard security measures, no system is 100% secure. We continuously work to improve our security posture and recommend you use strong passwords and keep your device updated.
+            </div>
+        </div>
+
+        <div class="section" id="privacy-rights">
+            <h2>11. Your Privacy Rights</h2>
+            <p>Depending on your location, you may have the following rights regarding your personal information:</p>
+            
+            <h3>Universal Rights</h3>
+            <ul>
+                <li><strong>Access:</strong> Request a copy of your personal data</li>
+                <li><strong>Rectification:</strong> Correct inaccurate information</li>
+                <li><strong>Erasure:</strong> Delete your personal data</li>
+                <li><strong>Portability:</strong> Transfer your data to another service</li>
+                <li><strong>Objection:</strong> Object to certain processing activities</li>
+                <li><strong>Restriction:</strong> Limit how we process your data</li>
+                <li><strong>Withdraw Consent:</strong> Withdraw consent for processing based on consent</li>
+            </ul>
+
+            <h3>How to Exercise Your Rights</h3>
+            
+            <h4>Delete Your Account and Data:</h4>
+            <ol>
+                <li>Open the Grit app</li>
+                <li>Go to Settings</li>
+                <li>Open the Account section</li>
+                <li>Sign in if not already signed in</li>
+                <li>Tap "Delete Account"</li>
+                <li>Confirm deletion</li>
+            </ol>
+            
+            <h4>Other Rights Requests:</h4>
+            <p>Email us at <a href="mailto:heliosbytes@gmail.com" style="color: #ffffff;">heliosbytes@gmail.com</a> with your request. We will respond within 30 days.</p>
+            
+            <h3>Notification Settings</h3>
+            <p>You can manage notifications:</p>
+            <ul>
+                <li>In-app: Settings > Notifications</li>
+                <li>Device settings: App notifications</li>
+                <li>Completely disable through device settings</li>
+            </ul>
+        </div>
+
+        <div class="section" id="do-not-track">
+            <h2>12. Do-Not-Track Signals</h2>
+            <p>We currently do not respond to Do-Not-Track (DNT) signals from web browsers as there is no universally accepted standard for how to respond to such signals.</p>
+            
+            <h3>Alternative Privacy Controls</h3>
+            <p>Instead, you can control tracking through:</p>
+            <ul>
+                <li><strong>Device Settings:</strong> Limit ad tracking in your device settings</li>
+                <li><strong>Google Ad Settings:</strong> Opt out of personalized ads</li>
+                <li><strong>App Permissions:</strong> Revoke permissions in device settings</li>
+                <li><strong>Account Deletion:</strong> Delete your account to stop all data collection</li>
+            </ul>
+            
+            <h3>Future DNT Support</h3>
+            <p>We monitor developments in DNT standards and may implement support for standardized DNT signals in the future.</p>
+        </div>
+
+        <div class="section" id="us-rights">
+            <h2>13. US Residents Specific Rights</h2>
+            <p>If you're a US resident, you may have additional rights under state privacy laws (CCPA, CPRA, and other state laws):</p>
+            
+            <h3>California Residents (CCPA/CPRA)</h3>
+            <ul>
+                <li><strong>Right to Know:</strong> What personal information is collected, used, shared, or sold</li>
+                <li><strong>Right to Access:</strong> Request access to your personal information</li>
+                <li><strong>Right to Correct:</strong> Correct inaccuracies in your personal information</li>
+                <li><strong>Right to Delete:</strong> Delete your personal information</li>
+                <li><strong>Right to Opt-Out:</strong> Opt out of the sale or sharing of personal information</li>
+                <li><strong>Right to Limit:</strong> Limit use of sensitive personal information</li>
+                <li><strong>Right to Non-Discrimination:</strong> Not be discriminated against for exercising your rights</li>
+            </ul>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Information Category</th>
+                            <th>Collected</th>
+                            <th>Examples</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Identifiers</td>
+                            <td>Yes</td>
+                            <td>Name, email, device ID, advertising ID</td>
+                            <td>Account management, personalization</td>
+                        </tr>
+                        <tr>
+                            <td>Commercial Information</td>
+                            <td>Yes</td>
+                            <td>Purchase history, subscriptions</td>
+                            <td>Service provision</td>
+                        </tr>
+                        <tr>
+                            <td>Internet Activity</td>
+                            <td>Yes</td>
+                            <td>App usage, interactions, preferences</td>
+                            <td>App improvement, personalization</td>
+                        </tr>
+                        <tr>
+                            <td>Geolocation</td>
+                            <td>Limited</td>
+                            <td>General location from IP address</td>
+                            <td>Content localization</td>
+                        </tr>
+                        <tr>
+                            <td>Biometric Information</td>
+                            <td>No</td>
+                            <td>Not collected</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>Sensitive Personal Information</td>
+                            <td>No</td>
+                            <td>Not collected</td>
+                            <td>N/A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+          <h3>Sales and Sharing</h3>
+            <p><strong>Important:</strong> We do NOT sell your personal information to third parties. We may share certain information with service providers as described in Section 4, but this is not considered a "sale" under CCPA.</p>
+            
+            <h3>Exercising Your Rights</h3>
+            <p>To exercise your California privacy rights, contact us at <a href="mailto:heliosbytes@gmail.com" style="color: #ffffff;">heliosbytes@gmail.com</a> or use the account deletion feature in the app.</p>
+            
+            <h3>Other State Laws</h3>
+            <p>Residents of Virginia, Colorado, Connecticut, and other states with privacy laws have similar rights. Contact us to exercise your rights under applicable state laws.</p>
+        </div>
+
+        <div class="section" id="other-regions">
+            <h2>14. Other Regions</h2>
+            
+            <h3>European Union & United Kingdom (GDPR/UK GDPR)</h3>
+            <p>Under GDPR and UK GDPR, you have enhanced rights including:</p>
+            <ul>
+                <li><strong>Right to be informed:</strong> Clear information about data processing</li>
+                <li><strong>Right of access:</strong> Request access to your personal data</li>
+                <li><strong>Right to rectification:</strong> Correct inaccurate data</li>
+                <li><strong>Right to erasure:</strong> Request deletion of your data</li>
+                <li><strong>Right to restrict processing:</strong> Limit how we process your data</li>
+                <li><strong>Right to data portability:</strong> Transfer your data to another service</li>
+                <li><strong>Right to object:</strong> Object to processing based on legitimate interests</li>
+                <li><strong>Right to withdraw consent:</strong> Withdraw consent at any time</li>
+            </ul>
+            
+            <h3>Canada (PIPEDA)</h3>
+            <p>Canadian users have rights under PIPEDA including access to personal information and the right to challenge the accuracy of data.</p>
+            
+            <h3>Australia & New Zealand (Privacy Act)</h3>
+            <p>Australian and New Zealand users have rights under their respective Privacy Acts, including access to personal information and correction of inaccuracies.</p>
+            
+            <h3>Brazil (LGPD)</h3>
+            <p>Brazilian users have rights under LGPD including access, correction, deletion, and portability of personal data.</p>
+            
+            <h3>India (Digital Personal Data Protection Act 2023)</h3>
+            <p>As an Indian company, we comply with India's Digital Personal Data Protection Act 2023, providing Indian users with rights including access, correction, deletion, and data portability.</p>
+            
+            <h3>Singapore (PDPA)</h3>
+            <p>Singapore users have rights under PDPA including access to personal data and correction of inaccuracies.</p>
+            
+            <div class="highlight">
+                <strong>Contact:</strong> To exercise your rights under any regional privacy law, contact us at <a href="mailto:heliosbytes@gmail.com" style="color: #ffffff;">heliosbytes@gmail.com</a> and specify your location and the right you wish to exercise.
+            </div>
+        </div>
+
+        <div class="section" id="children">
+            <h2>15. Children's Privacy</h2>
+            <p>The Grit app is designed for users aged 13 and older. We are committed to protecting children's privacy and comply with applicable children's privacy laws.</p>
+            
+            <h3>Age Restrictions</h3>
+            <ul>
+                <li><strong>Minimum Age:</strong> 13 years old globally</li>
+                <li><strong>European Union:</strong> 16 years old or age of digital consent in your country</li>
+                <li><strong>Account Creation:</strong> Users must confirm they meet the minimum age requirement</li>
+            </ul>
+            
+            <h3>COPPA Compliance (US)</h3>
+            <p>Our app is not directed to children under 13 years of age. We do not knowingly collect personal information from children under 13. If we become aware that we have collected personal information from a child under 13, we will take steps to delete such information promptly.</p>
+            
+            <h3>GDPR Article 8 Compliance (EU/UK)</h3>
+            <p>For users in the EU/UK, we do not process personal data of children under 16 (or the applicable age in your member state) without verifiable parental consent.</p>
+            
+            <h3>Parental Controls</h3>
+            <p>Parents and guardians can:</p>
+            <ul>
+                <li>Review and delete their child's account</li>
+                <li>Refuse to permit further collection of their child's information</li>
+                <li>Request access to their child's personal information</li>
+            </ul>
+            
+            <h3>If You Are a Parent</h3>
+            <p>If you believe your child under 13 has provided personal information to us, please contact us immediately at <a href="mailto:heliosbytes@gmail.com" style="color: #ffffff;">heliosbytes@gmail.com</a>. We will investigate and take appropriate action to remove the information.</p>
+            
+            <div class="highlight">
+                <strong>Important:</strong> COPPA imposes certain requirements on operators of websites or online services directed to children under 13 years of age, and we ensure full compliance by restricting our service to users 13 and older.
+            </div>
+        </div>
+
+        <div class="section" id="updates">
+            <h2>16. Policy Updates</h2>
+            <p>We may update this privacy policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors.</p>
+            
+            <h3>How We Notify You</h3>
+            <ul>
+                <li><strong>In-App Notification:</strong> Updates will be announced in the app</li>
+                <li><strong>Email Notification:</strong> If you've provided an email, we'll notify you of significant changes</li>
+                <li><strong>Last Updated Date:</strong> Always check the "Last Updated" date at the top of this policy</li>
+            </ul>
+            
+            <h3>Types of Updates</h3>
+            <ul>
+                <li><strong>Minor Updates:</strong> Clarifications, formatting, or contact information changes</li>
+                <li><strong>Material Changes:</strong> Significant changes to data collection, use, or sharing practices</li>
+                <li><strong>Legal Updates:</strong> Changes required by new laws or regulations</li>
+            </ul>
+            
+            <h3>Your Options</h3>
+            <p>When we make material changes:</p>
+            <ul>
+                <li>You'll receive advance notice (typically 30 days)</li>
+                <li>You can review the changes before they take effect</li>
+                <li>You can choose to delete your account if you disagree</li>
+                <li>Continued use of the app constitutes acceptance of the updated policy</li>
+            </ul>
+            
+            <h3>Version History</h3>
+            <p>We maintain a record of significant policy changes. You can request information about previous versions by contacting us.</p>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>17. Contact Us</h2>
+            <p>If you have any questions, concerns, or requests regarding this privacy policy or our data practices, please contact us:</p>
+            
+            <div class="contact-info">
+                <h3>HeliosBytes</h3>
+                <p><strong>Email:</strong> <a href="mailto:heliosbytes@gmail.com">heliosbytes@gmail.com</a></p>
+                <p><strong>App:</strong> Grit - Daily Motivational Quotes</p>
+                <p><strong>Response Time:</strong> We aim to respond within 48 hours</p>
+            </div>
+            
+            <h3>What to Include in Your Request</h3>
+            <p>When contacting us about privacy matters, please include:</p>
+            <ul>
+                <li>Your name and contact information</li>
+                <li>Your location (country/state)</li>
+                <li>Specific privacy right you wish to exercise</li>
+                <li>Account information (if applicable)</li>
+                <li>Detailed description of your request or concern</li>
+            </ul>
+            
+            <h3>Emergency Contact</h3>
+            <p>For urgent privacy matters or suspected data breaches, please email us immediately with "URGENT - PRIVACY" in the subject line.</p>
+        </div>
+
+        <div class="section" id="data-management">
+            <h2>18. Data Management</h2>
+            <p>We provide you with comprehensive control over your personal data through various self-service options and account management features.</p>
+            
+            <h3>Account Management</h3>
+            <p>Through the Grit app, you can:</p>
+            <ul>
+                <li><strong>View Account Info:</strong> Access your profile and account details</li>
+                <li><strong>Update Preferences:</strong> Modify your life area preferences and daily dose settings</li>
+                <li><strong>Manage Notifications:</strong> Control reminder frequency and timing</li>
+                <li><strong>Theme Settings:</strong> Change app themes and customization options</li>
+                <li><strong>Export Data:</strong> Download your saved quotes and preferences</li>
+                <li><strong>Delete Account:</strong> Permanently remove your account and data</li>
+            </ul>
+            
+            <h3>Data Download</h3>
+            <p>You can request a copy of your personal data in a commonly used, machine-readable format:</p>
+            <ul>
+                <li>Account information and preferences</li>
+                <li>Saved quotes and favorites</li>
+                <li>App usage statistics</li>
+                <li>Customization settings</li>
+            </ul>
+            
+            <h3>Data Deletion Process</h3>
+            <p>When you delete your account:</p>
+            <ol>
+                <li>Your account is immediately deactivated</li>
+                <li>Personal data is queued for deletion within 30 days</li>
+                <li>Some data may be retained for legal compliance (as outlined in Section 9)</li>
+                <li>You'll receive confirmation of account deletion</li>
+            </ol>
+            
+            <h3>Data Portability</h3>
+            <p>You have the right to receive your personal data in a structured, commonly used format and to transmit it to another service provider where technically feasible.</p>
+            
+            <h3>Backup and Recovery</h3>
+            <p>We maintain secure backups of your data for service continuity. Backup data is subject to the same privacy protections and retention policies as primary data.</p>
+            
+            <div class="highlight">
+                <strong>Remember:</strong> Some data may be retained in our systems for legal compliance, security, or legitimate business purposes even after account deletion, as outlined in our retention policy.
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <h2>Need Help?</h2>
+            <p>Questions about this privacy policy or your data?</p>
+            <p><strong>Email:</strong> <a href="mailto:heliosbytes@gmail.com">heliosbytes@gmail.com</a></p>
+            <p><strong>We're here to help!</strong> Our team typically responds within 48 hours.</p>
+        </div>
+    </div>
+
+    <button class="back-to-top" onclick="scrollToTop()">↑ Top</button>
+
+    <script>
+        // Back to top button functionality
+        window.addEventListener('scroll', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
