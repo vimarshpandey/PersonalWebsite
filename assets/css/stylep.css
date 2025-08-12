@@ -497,7 +497,7 @@ img{
 }
 
 .skills__c{
-    width: 75%;
+    width: 60%;
 }
 
 .skills__cpp{
@@ -505,11 +505,11 @@ img{
 }
 
 .skills__java{
-    width: 40%;
+    width: 70%;
 }
 
 .skills__micropython{
-    width: 30%;
+    width: 40%;
 }
 
 .skills__html{
@@ -521,19 +521,15 @@ img{
 }
 
 .skills__bootstrap{
-    width: 65%;
+    width: 80%;
 }
 
 .skills__php{
-    width: 40%;
-}
-
-.skills__mysql{
     width: 50%;
 }
 
-.skills__firebase{
-    width: 30%;
+.skills__mysql{
+    width: 70%;
 }
 
 .skills__flutter{
@@ -541,7 +537,23 @@ img{
 }
 
 .skills__dart{
-    width: 35%;
+    width: 30%;
+}
+
+.skills__selenium{
+    width: 60%;
+}
+
+.skills__playwright{
+    width: 50%;
+}
+
+.skills__postman{
+    width: 70%;
+}
+
+.skills__jmeter{
+    width: 40%;
 }
 
 .skills__close .skills__list{
