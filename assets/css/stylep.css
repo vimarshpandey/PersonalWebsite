@@ -556,6 +556,14 @@ img{
     width: 40%;
 }
 
+.skills__jira{
+    width: 60%;
+}
+
+.skills__zephyr{
+    width: 50%;
+}
+
 .skills__close .skills__list{
     height: 0;
     overflow: hidden;
